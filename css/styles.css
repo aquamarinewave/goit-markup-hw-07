@@ -856,21 +856,20 @@ img {
   color: var(--accent-text-color);
 }
 
-.modal__ckecked-icon {
+.modal__ckeck-icon {
   opacity: 0;
   transition: opacity var(--animarion-time) var(--animation);
 }
 
-.modal__agriment-checkbox:checked + .modal__ckeck-icon .modal__ckecked-icon {
+.modal__agriment-checkbox:checked + .modal__agriment-icon .modal__ckeck-icon {
   opacity: 1;
 }
 
-.modal__unckecked-icon {
+.modal__ckeck-icon--unckecked {
   opacity: 1;
-  transition: opacity var(--animarion-time) var(--animation);
 }
 
-.modal__agriment-checkbox:checked + .modal__ckeck-icon .modal__unckecked-icon {
+.modal__agriment-checkbox:checked + .modal__agriment-icon .modal__ckeck-icon--unckecked {
   opacity: 0;
 }
 
