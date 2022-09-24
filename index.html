@@ -11,13 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <title>Web Studio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container header__header-container">
+      <div class="container header__container">
         <nav class="nav">
           <a class="link logo logo--logo-black" href="./index.html">
             <span class="accent">Web</span>Studio
@@ -25,7 +25,7 @@
 
           <ul class="list nav__menu">
             <li class="nav__item">
-              <a class="link nav__link current-text" href="./index.html">Студія</a>
+              <a class="link nav__link nav__current-text" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
               <a class="link nav__link" href="./porfolio.html">Портфоліо</a>
@@ -36,7 +36,7 @@
         <ul class="list header__contacts">
           <li class="header-contacts-item">
             <a class="link header__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header__envelope" width="16" height="12">
+              <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -44,7 +44,7 @@
           </li>
           <li class="header-contacts-item">
             <a class="link header__contacts-link" href="tel:+380961111111">
-              <svg class="header__smartphone" width="10" height="16">
+              <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -55,10 +55,10 @@
     </header>
     <main class="main-content">
       <!--Hero-->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="btn hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
 
         <div class="backdrop is-hidden" data-modal>
@@ -126,59 +126,59 @@
                   >
                 </span>
               </label>
-              <button class="modal__send-btn" type="submit">Відправити</button>
+              <button class="btn modal__send-btn" type="submit">Відправити</button>
             </form>
           </div>
         </div>
       </section>
       <!--Our benefits-->
-      <section class="benafits section">
+      <section class="benafits">
         <div class="container">
           <!--Logical header, need to be hidden with css -->
           <h2 class="title visually-hidden">Наші переваги</h2>
 
           <ul class="list benafits__list">
-            <li class="benafit__item">
-              <div class="benafit__icon-container">
+            <li class="benafits__item">
+              <div class="benafits__icon-container">
                 <svg class="benafit-icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benafit__title">Увага до деталей</h3>
-              <p class="benafit__text">
+              <h3 class="benafits__title">Увага до деталей</h3>
+              <p class="benafits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="benafit__item">
-              <div class="benafit__icon-container">
+            <li class="benafits__item">
+              <div class="benafits__icon-container">
                 <svg class="benafit-icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="benafit-header">Пунктуальність</h3>
-              <p class="benafit__text">
+              <h3 class="benafits__title">Пунктуальність</h3>
+              <p class="benafits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="benafit__item">
-              <div class="benafit__icon-container">
+            <li class="benafits__item">
+              <div class="benafits__icon-container">
                 <svg class="benafit-icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benafit-header">Планування</h3>
-              <p class="benafit__text">
+              <h3 class="benafits__title">Планування</h3>
+              <p class="benafits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benafit__item">
-              <div class="benafit__icon-container">
+            <li class="benafits__item">
+              <div class="benafits__icon-container">
                 <svg class="benafit-icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benafit-header">Сучасні Технології</h3>
-              <p class="benafit__text">
+              <h3 class="benafits__title">Сучасні Технології</h3>
+              <p class="benafits__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -186,45 +186,45 @@
         </div>
       </section>
       <!--What we do-->
-      <section class="we-do section">
+      <section class="works">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
-          <ul class="list works-list">
-            <li class="works-list__item">
+          <ul class="list works__list">
+            <li class="works__item">
               <img
-                class="works-list__img"
+                class="works__img"
                 src="./images/what-we-do/img-1.jpg"
                 alt="Стіл на якому лежить аркуш паперу з схематично зображеною логікою сайту, та руки програміста на клавіатурі, який пише код сайту, на моніторі та планшеті видно фрагменти коду"
                 width="370"
                 height="294"
               />
-              <h3 class="works-list__title">Десктопні додатки</h3>
+              <h3 class="works__title">Десктопні додатки</h3>
             </li>
-            <li class="works-list__item">
+            <li class="works__item">
               <img
-                class="works-list__img"
+                class="works__img"
                 src="./images/what-we-do/img-2.jpg"
                 alt="Дизайнер розробляє прототип, як має виглядати додаток, на ноутбуці та моніторі зображені приклади екранів модільного телефону з варіантами дизайну"
                 width="370"
                 height="294"
               />
-              <h3 class="works-list__title">Мобільні додатки</h3>
+              <h3 class="works__title">Мобільні додатки</h3>
             </li>
-            <li class="works-list__item">
+            <li class="works__item">
               <img
-                class="works-list__img"
+                class="works__img"
                 src="./images/what-we-do/img-3.jpg"
                 alt="Дизайнер підбирає палітру кольорів тримаючи в руках планшет з палітрою у вигляді сот"
                 width="370"
                 height="294"
               />
-              <h3 class="works-list__title">Дизайнерські рішення</h3>
+              <h3 class="works__title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
       </section>
       <!--Our team-->
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
@@ -237,7 +237,7 @@
                 height="260"
               />
               <div class="team__desc">
-                <h3 class="team__header">Ігор Дем'яненко</h3>
+                <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
                 <ul class="list socials">
                   <li class="soc-item">
@@ -304,7 +304,7 @@
                 height="260"
               />
               <div class="team__desc">
-                <h3 class="team__header">Ольга Рєпіна</h3>
+                <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
                 <ul class="list socials">
                   <li>
@@ -371,7 +371,7 @@
                 height="260"
               />
               <div class="team__desc">
-                <h3 class="team__header">Микола Тарасов</h3>
+                <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
                 <ul class="list socials">
                   <li class="socials-item">
@@ -438,7 +438,7 @@
                 height="260"
               />
               <div class="team__desc">
-                <h3 class="team__header">Михайло Єрмаков</h3>
+                <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
                 <ul class="list socials">
                   <li>
@@ -500,7 +500,7 @@
         </div>
       </section>
       <!--Clients-->
-      <section class="clients section">
+      <section class="clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="list clients">
@@ -649,7 +649,7 @@
               />
             </label>
 
-            <button class="footer__sent-btn" type="submit">
+            <button class="btn footer__sent-btn" type="submit">
               <span>Підписатися</span>
               <svg class="footer__sent-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

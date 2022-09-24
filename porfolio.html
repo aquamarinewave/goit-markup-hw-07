@@ -11,13 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <title>Web Studio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container header__header-container">
+      <div class="container header__container">
         <nav class="nav">
           <a class="link logo logo--logo-black" href="./index.html">
             <span class="accent">Web</span>Studio
@@ -28,7 +28,7 @@
               <a class="link nav__link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link current-text" href="./porfolio.html">Портфоліо</a>
+              <a class="link nav__link nav__current-text" href="./porfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
           </ul>
@@ -36,7 +36,7 @@
         <ul class="list header__contacts">
           <li class="header-contacts-item">
             <a class="link header__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header__envelope" width="16" height="12">
+              <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -44,7 +44,7 @@
           </li>
           <li class="header-contacts-item">
             <a class="link header__contacts-link" href="tel:+380961111111">
-              <svg class="header__smartphone" width="10" height="16">
+              <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -60,19 +60,21 @@
           <h1 class="portfolio-main-header visually-hidden">Наші роботи</h1>
           <ul class="list portfolio__filters">
             <li class="portfolio__filter-item">
-              <button class="portfolio__filter-btn current-bg" type="button">Усі</button>
+              <button class="btn portfolio__filter-btn btn--filter current-bg" type="button">
+                Усі
+              </button>
             </li>
             <li class="portfolio__filter-item">
-              <button class="portfolio__filter-btn" type="button">Веб-сайти</button>
+              <button class="btn btn--filter portfolio__filter-btn" type="button">Веб-сайти</button>
             </li>
             <li class="portfolio__filter-item">
-              <button class="portfolio__filter-btn" type="button">Додатки</button>
+              <button class="btn btn--filter portfolio__filter-btn" type="button">Додатки</button>
             </li>
             <li class="portfolio__filter-item">
-              <button class="portfolio__filter-btn" type="button">Дизайн</button>
+              <button class="btn btn--filter portfolio__filter-btn" type="button">Дизайн</button>
             </li>
             <li class="portfolio__filter-item">
-              <button class="portfolio__filter-btn" type="button">Маркетинг</button>
+              <button class="btn btn--filter portfolio__filter-btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="list portfolio__list">
@@ -382,7 +384,7 @@
               />
             </label>
 
-            <button class="footer__sent-btn" type="submit">
+            <button class="btn footer__sent-btn" type="submit">
               <span>Підписатися</span>
               <svg class="footer__sent-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
