@@ -237,7 +237,7 @@ body {
   margin-bottom: 20px;
 }
 
-.modal-text {
+.modal__label-text {
   display: block;
   margin-bottom: 4px;
   color: var(--submain-text-color);
