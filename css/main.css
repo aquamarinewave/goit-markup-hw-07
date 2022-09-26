@@ -316,6 +316,8 @@ body {
   left: 11px;
   -webkit-transform: translate(50%);
           transform: translate(50%);
+  -webkit-transition: background-color var(--animarion-time) var(--animation);
+  transition: background-color var(--animarion-time) var(--animation);
 }
 .modal__label:focus-within > .modal__icon, .modal__label:hover > .modal__icon {
   fill: var(--accent-bg-color);

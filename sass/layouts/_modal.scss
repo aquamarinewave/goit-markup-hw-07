@@ -99,6 +99,7 @@
   top: 50%;
   left: 11px;
   transform: translate(50%);
+  transition: background-color var(--animarion-time) var(--animation);
 
   .modal__label:focus-within > &,
   .modal__label:hover > & {
