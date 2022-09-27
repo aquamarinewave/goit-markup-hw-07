@@ -544,6 +544,9 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
